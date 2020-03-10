@@ -27,6 +27,7 @@ body {
     color: #EBC104;
     height: 4.5rem;
     font-family: 'Gotham Nights';
+    z-index: 10;
 }
 
 .header nav {
@@ -93,6 +94,8 @@ select {
     padding: 20px;
 }
 h2 {
+    font-size: 3rem;
+    letter-spacing: 6px;
     text-align: center;
     font-family: 'Gotham Nights';
     color:#EBC104;
@@ -189,22 +192,33 @@ h1 {
     background-color: tomato;
     margin: 0 1em 2em 0;
 }
-iframe {
-    margin-top: 3%;
-    margin-left: 2%;
-    width: 45%;
-    height:500px;
+
+.mapsAndLine {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
-.maps a{
-    margin-left: 2%;
+.line {
+    transform: rotate(90deg);
+    z-index: 2;
+    flex-direction: row;
+    align-items: stretch;
+} 
+
+iframe {
+    
+    width: 800px;
+    height:800px;
+
+}
+
+.maps a {
     color: white;
     text-decoration: none;
 }
-.table{
 
-    margin-top:100px;
-}
 
 .table  {
     border-collapse:collapse;
@@ -250,8 +264,11 @@ iframe {
     justify-content: space-around;
     margin: center;
     margin-bottom: 3%;
+    margin-top: 3%;
 }
 
 .schedule{
     height: 350px;
 }
+
+
