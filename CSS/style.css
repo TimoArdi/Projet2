@@ -9,7 +9,12 @@
 }
 
 body {
-    background-color: #3C271D;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Roboto';
+    font-size: 1.1rem;
+    color: rgb(216, 196, 105);
+    background-color: #3C271D
 }
 
 .header {
@@ -68,4 +73,52 @@ body {
 .logo_header:hover {
     filter: drop-shadow(0 0 15px white);
     transition: 0.3s;
+}
+
+h1 {
+    font-family: 'Gotham Nights';
+    font-size: 4rem;
+    padding: 1rem 0 1rem 0;
+    color: #EBC104;
+    text-shadow: 0 -3px 0 #ddd,
+		0 3px 0 #111,
+		-3px 0 #666,
+		3px 0 #666,
+		-3px -3px 0 #999,
+		3px -3px 0 #999,
+		3px 3px 0 #333,
+        -3px 3px 0 #333;
+    text-align: center;
+}
+
+.batcub_pres {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.5rem;
+    justify-content: center;
+}
+
+.batcub_items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.batcub_items p {
+    margin-left: 1em;
+    width: 45%;
+    line-height: 1.5rem;
+}
+
+.batcub_items span {
+    line-height: 3rem;
+    text-shadow: tomato;
+    font-style: italic;
+}
+
+.img_provisoire {
+    width: 45%;
+    height: 20em;
+    background-color: tomato;
+    margin: 0 1em 2em 0;
 }
