@@ -93,9 +93,12 @@ select {
     padding: 20px;
 }
 h2 {
+    font-size: 3rem;
+    letter-spacing: 6px;
     text-align: center;
     font-family: 'Gotham Nights';
     color:#EBC104;
+    
 
 }
 
@@ -120,6 +123,9 @@ form {
 -moz-box-shadow: 6px 8px 17px -4px rgba(0,0,0,0.75);
 box-shadow: 6px 8px 17px -4px rgba(0,0,0,0.75);
 
+}
+.comment p {
+    margin-top: 10px;
 }
 .commentcontain {
     display: flex;
