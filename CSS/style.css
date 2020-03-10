@@ -8,8 +8,16 @@
     src: url(GothamNights-e49g.ttf);
 }
 
+
+
 body {
+    display: flex;
+    flex-direction: column;
     background-color: #3C271D;
+    font-family: 'Roboto';
+    font-size: 1.1rem;
+
+   
 }
 
 .header {
@@ -72,27 +80,71 @@ body {
 
 .formulaire {
     display: flex;
-    border: 1px solid black;
+   
     padding: 30px;
     flex-direction: column;
 }
 input {
     margin: 5px;
+    padding: 2px;
+    width: 97%;
 }
 select {
     margin: 5px;
 }
 .button {
-    margin: 10px;
+    text-align: center;
+    padding: 20px;
 }
 h2 {
     text-align: center;
+    font-family: 'Gotham Nights';
+    color:#EBC104;
+
 }
-article {
-    
-}
+
 .contactavis {
     display: flex;
     flex-direction: row;
-    border: 1px solid red;
+   
+    margin-top: 100px;
+}
+form {
+    padding:50px;
+    }
+
+.comment {
+    width: 30%;
+    margin: 50px;
+    border: 1px solid#EBC104;
+    padding: 20px;
+}
+.commentcontain {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   
+}
+textarea {
+    width: 97%;
+    margin:5px;
+    height: 100px;
+}
+
+.avis h2 {
+    padding: 20px;
+}
+.formulaire p {
+  margin-bottom: 10px;
+}
+footer {
+    background-color: rgb(39, 23, 16);
+    padding: 30px;
+    margin-top: 30px;
+}
+.informations {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }

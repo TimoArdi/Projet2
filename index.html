@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>Le BatCub</title>
     <link rel="stylesheet" href="CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
 </head>
 <body>  
 <!--
@@ -87,54 +89,89 @@
 <hr>
 
 <!--
-    Begin section CONTACT ET AVIS
+    Begin section CONTACT ET AVISContact
+
 -->
 <div class="contactavis">
 <section>
         
         <nav class="formulaire">
-            <h2>Contact</h2>
+            <h2>CONTACT</h2>
             <form action="msg" method="post">
+                <div class="informations">
                  <p>Vous avez une urgence ou une requète a faire a Batman ?<br>
                     Vous pouvez utiliser le BatSignal !</p>
-        <div class="informations">
+       
                 <div>
-                    <label for="name">Nom :</label>
-                    <input type="text" id="name" name="user_name" required>
+                    <input type="text" id="name" name="user_name" placeholder="Nom" required>
                 </div>
                 <div>
-                    <label for="name">Prenom :</label>
-                    <input type="text" id="name" name="user_name" required>
+                    
+                    <input type="text" id="name" name="user_name" placeholder="Prenom" required>
                 </div>
                 <div>
-                    <label for="mail">E-mail :</label>
-                    <input type="email" id="mail" name="user_mail" required>
+                    <input type="email" id="mail" name="user_mail" placeholder="E-mail" required>
                 </div>
-                <div>
-                <label for="reasons-select">Quelle est la raison de la requète ?</label>
-                </div>
-                <select name="reasons" id="reasons-select">
-                    <option value="Raison">Je suis coincé sur le BatCub</option>
-                    <option value="Raison">Mon enfant est tombé à l'eau</option>
-                    <option value="Raison">La ville brûle</option>
-                    <option value="Raison">Je sais qui est le pousseur des quais</option>
-                </select>
-            </div>
+         
          
                 <div>
-                    <label for="msg">Message :</label>
-                    <textarea id="msg" name="user_message"></textarea>
+                </div>
+                <select name="reasons" id="reasons-select">
+                    <option value="" selected>Quelle est la raison de la requète ?</option>
+                    <option value="">Je suis coincé sur le BatCub</option>
+                    <option value="">Mon enfant est tombé à l'eau</option>
+                    <option value="">La ville brûle</option>
+                    <option value="">Je sais qui est le pousseur des quais</option>
+                    <option value="">Je m'ennuie la ville est trop calme</option>
+                </select>
+            
+         
+                <div>
+                  
+                    <textarea id="msg" name="user_message" placeholder="Ecrivez votre message"></textarea>
                
 
             </div>
+        
                 <div class="button">
-                    <button type="submit">BatSignal</button>
+                    <button type="submit">Envoyer la requète</button>
                 </div>
+            </div>
             </form>
         </nav>
     </section>
-    <article>
-        <h2>Avis</h2>
+    
+    <article class="avis">
+        <div class="commenttitle">
+            <h2>AVIS</h2>
+        </div>
+        <div class="commentcontain">
+        <div class="comment">
+           <h3>Jeanine</h3>
+           <p>Le café n'était pas très bon, mais le Commissaire Gordon
+            étant sympathique, j'ai apprécie cette traversée !
+           </p>
+        </div>
+        <div class="comment">
+            <h3>Jeanine</h3>
+            <p>Le café n'était pas très bon, mais le Commissaire Gordon
+             étant sympathique, j'ai apprécie cette traversée !
+            </p>
+         </div>
+         <div class="comment">
+            <h3>Jeanine</h3>
+            <p>Le café n'était pas très bon, mais le Commissaire Gordon
+             étant sympathique, j'ai apprécie cette traversée !
+            </p>
+         </div>
+         <div class="comment">
+            <h3>Jeanine</h3>
+            <p>Le café n'était pas très bon, mais le Commissaire Gordon
+             étant sympathique, j'ai apprécie cette traversée !
+            </p>
+         </div>
+         
+        </div>
     </article>
 </div>
     <!--
