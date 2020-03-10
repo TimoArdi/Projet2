@@ -69,3 +69,30 @@ body {
     filter: drop-shadow(0 0 15px white);
     transition: 0.3s;
 }
+
+.formulaire {
+    display: flex;
+    border: 1px solid black;
+    padding: 30px;
+    flex-direction: column;
+}
+input {
+    margin: 5px;
+}
+select {
+    margin: 5px;
+}
+.button {
+    margin: 10px;
+}
+h2 {
+    text-align: center;
+}
+article {
+    
+}
+.contactavis {
+    display: flex;
+    flex-direction: row;
+    border: 1px solid red;
+}
