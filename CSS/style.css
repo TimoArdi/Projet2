@@ -14,7 +14,7 @@ body {
     font-family: 'Roboto';
     font-size: 1.1rem;
     color: rgb(216, 196, 105);
-    background-color: #3C271D
+    background-color: #3C271D;
 }
 
 .header {
@@ -98,9 +98,12 @@ select {
     padding: 20px;
 }
 h2 {
+    font-size: 3rem;
+    letter-spacing: 6px;
     text-align: center;
     font-family: 'Gotham Nights';
     color:#EBC104;
+    
 
 }
 
@@ -108,6 +111,7 @@ h2 {
     display: flex;
     flex-direction: row;
     margin-top: 100px;
+    line-height: 1.5rem;
 }
 form {
     padding:50px;
@@ -118,6 +122,15 @@ form {
     margin: 50px;
     border: 1px solid#EBC104;
     padding: 20px;
+    font-style: italic;
+    color: white;
+    -webkit-box-shadow: 6px 8px 17px -4px rgba(0,0,0,0.75);
+-moz-box-shadow: 6px 8px 17px -4px rgba(0,0,0,0.75);
+box-shadow: 6px 8px 17px -4px rgba(0,0,0,0.75);
+
+}
+.comment p {
+    margin-top: 10px;
 }
 .commentcontain {
     display: flex;
@@ -302,3 +315,82 @@ iframe {
         border-radius: 0;
     }
 }
+h3 {
+    
+    font-style: normal;
+    font-weight: bold;
+    color: #EBC104;
+}
+.logosocial img {
+    width: 3rem;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 1.5rem;
+    
+}
+.comment img {
+    width: 1rem;
+    margin-left: 10px;
+}
+.negatif img {
+    width: 1rem;
+   rotate: 180deg;
+}
+
+.button {
+    color: #3C271D ;
+    background-color: #EBC104;
+    border-radius: 3px;
+    cursor: pointer; 
+    box-shadow: 0 2px 16px 0 rgb(0, 0, 0);
+    padding: 10px;
+    margin: 10px;
+    transition-duration: 0.4s;
+  }
+  
+  .button:hover {
+    background-color: #3C271D; 
+    color: white;
+  }
+  .social {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+  }
+  .logosocial {
+      margin-left: 100px;
+      margin-right: 100px;
+  }
+ 
+  @media screen and (max-width: 600px) {
+  .contactavis {
+      flex-direction: column;
+  }
+  .commentcontain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.comment {
+    width: 80%;
+}
+footer {
+    flex-direction: column-reverse;
+    text-align: center;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+.logosocial {
+    margin: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+  }
