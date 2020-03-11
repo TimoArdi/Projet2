@@ -104,8 +104,6 @@ h2 {
     text-align: center;
     font-family: 'Gotham Nights';
     color:#EBC104;
-    
-
 }
 
 .contactavis {
@@ -213,6 +211,14 @@ h1 {
     margin: 0 1em 2em 0;
     border-radius: 4%;
 }
+#LOCALISER, #TARIFS{
+    margin: 3%;
+    padding: 4.5rem;
+}
+
+#AVIS {
+    padding: 6rem;
+}
 
 .mapsAndLine {
     display: flex;
@@ -230,8 +236,8 @@ h1 {
 
 iframe {
     
-    width: 800px;
-    height:800px;
+    width: 700px;
+    height:700px;
 
 }
 
@@ -326,15 +332,18 @@ iframe {
         border-radius: 0;
     }
 }
+
 h3 {
     
     font-style: normal;
     font-weight: bold;
     color: #EBC104;
 }
+
 .logosocial img {
     width: 3rem;
 }
+
 footer {
     display: flex;
     flex-direction: row;
@@ -343,10 +352,12 @@ footer {
     line-height: 1.5rem;
     
 }
+
 .comment img {
     width: 1rem;
     margin-left: 10px;
 }
+
 .negatif img {
     width: 1rem;
    rotate: 180deg;
@@ -367,41 +378,77 @@ footer {
     background-color: #3C271D; 
     color: white;
   }
+
   .social {
       display: flex;
       flex-direction: row;
       align-items: flex-end;
   }
+
   .logosocial {
       margin-left: 100px;
       margin-right: 100px;
   }
  
-  @media screen and (max-width: 600px) {
-  .contactavis {
+  @media screen and (max-width: 600px) 
+  {
+
+    .contactavis {
       flex-direction: column;
   }
+
   .commentcontain {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
+
 .comment {
     width: 80%;
 }
+
 footer {
     flex-direction: column-reverse;
     text-align: center;
 }
+
 .social {
     display: flex;
     flex-direction: row;
     align-items: flex-end;
 }
+
 .logosocial {
     margin: 20px;
     margin-left: 50px;
     margin-right: 50px;
+}
+
+.line{
+    margin: -10em;
+}
+
+.maps{
+    display: none;
+}
+
+.line {
+    transform: scale(0.7);
+    z-index: 2;
+    flex-direction: row;
+} 
+
+.scheduleAndPrices{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1%;
+    margin-top: 8%;
+}
+
+.prices{
+    margin-top: 8%;
 }
 
   }
