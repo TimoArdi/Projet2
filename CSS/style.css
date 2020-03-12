@@ -347,7 +347,36 @@ h3 {
 .button:hover {
     background-color: #3C271D; 
     color: white;
+  }
+
+  .social {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+  }
+
+  .logosocial {
+      margin-left: 100px;
+      margin-right: 100px;
+  }
+  .batsignal {
+    position: absolute;
+    position: fixed;
+    margin-right: 0px;
+    margin-top:40rem;
+    background-color: transparent;
 }
+.batsignal button {
+   background-color: transparent;
+   border: none;
+}
+.batsignal:hover {
+    filter: drop-shadow(0 0 15px white);
+    transition: 0.3s;
+}
+
+
+
 
 /* FIN SECTION CONTACT */
 
@@ -478,5 +507,23 @@ footer {
     .prices{
         margin-top: 8%;
     }
+    
+    .batsignal {
+        position: absolute;
+        position: fixed;
+        margin-right: 0px;
+        margin-top:37rem;
+        background-color: transparent;
+    }
+    .contactavis {
+      flex-direction: column;
+  }
+
+    .commentcontain {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
 }
 
