@@ -14,11 +14,7 @@ body {
     font-family: 'Roboto';
     font-size: 1.1rem;
     color: rgb(216, 196, 105);
-    background-color: rgb(0, 0, 0);
-    background-image: url(http://clipart-library.com/images/kcKo9BB5i.jpg);
-    background-attachment: fixed;
-    background-position: center;
-    background-size: cover;
+    background-color: rgb(24, 24, 24);
 }
 
 /* DÉBUT HEADER */
@@ -29,7 +25,7 @@ body {
     display: flex;
     justify-content: space-between;
     text-align: center;
-    background-color: rgba(39, 23, 16, .9);
+    background-color: rgba(53, 53, 53, 0.9);
     color: #EBC104;
     height: 4.5rem;
     font-family: 'Gotham Nights';
@@ -54,11 +50,11 @@ body {
 .header_items:hover {
     background-color: #EBC104;
     transition: 0.8s;
-    color: #3C271D;
+    color: rgba(53, 53, 53);
 }
 
 .header_items:hover a {
-    color: #3C271D;
+    color: rgba(53, 53, 53);
 }
 
 .header a {
@@ -89,7 +85,7 @@ body {
 
 h1 {
     font-family: 'Gotham Nights';
-    font-size: 4rem;
+    font-size: 6rem;
     padding: 1rem 0 2rem 0;
     color: #EBC104;
     text-shadow: 0 -3px 0 #ddd,
@@ -151,45 +147,50 @@ h2 {
     text-align: center;
     font-family: 'Gotham Nights';
     color:#EBC104;
-    padding-top: 4.5rem;
+    padding-top: 6rem;
     margin-bottom: 3rem;
 }
 
-/* DÉBUT SECTION LOCALISER */
-
-.mapsAndLine {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-    height: 22rem;
-    align-items: center;
-}
-
-.lignes {
-    display: flex;
-    flex-direction: row;
-    width: 40%;
-    margin-left: 1em;
-}
+/* DÉBUT SECTION SERVICES */
 
 #LOCALISER {
     margin-bottom: 4rem;
 }
 
-.mapsAndLine img {
-    transform: rotate(90deg);
-    z-index: 2;
-    height: 9rem;
-    margin-left: -6rem;
-    margin-right: -6rem;
+.section_services {
+    display: flex;
+    flex-direction: column;
 }
 
-.mapsAndLine iframe {
-    margin-right: 1em;
+.section_services div {
+    display: flex;
+    width: 100%;
 }
 
-/* FIN SECTION LOCALISER */
+.section_services div article {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    text-align: center;
+    align-items: center;
+    padding: 0 0.6rem 0 0.6rem ;
+}
+
+.top_services {
+    margin-bottom: 3rem;
+}
+
+.section_services h3 {
+    font-family: 'Gotham Nights';
+    font-size: 2rem;
+    padding: 1rem 0 1rem 0;
+}
+
+.img_services {
+    width: 250px;
+}
+
+/* FIN SECTION SERVICES */
 
 /* DÉBUT SECTION TARIFS */
 
@@ -311,7 +312,7 @@ textarea {
     margin-top:-0.5rem ;
 }
 .avis h2 {
-    padding-top: 4.5rem;
+    padding-top: 6rem;
 }
 
 .formulaire p {
@@ -374,14 +375,19 @@ h3 {
 .batsignal {
     position: absolute;
     position: fixed;
-    margin-right: 0px;
-    margin-top:48%;
+    margin-left: 2rem;
+    margin-top: 6rem;
     background-color: transparent;
 }
 .batsignal button {
     background-color: transparent;
     border: none;
 }
+
+.batsignal img {
+    width: 80px;
+}
+
 .batsignal:hover {
     filter: drop-shadow(0 0 15px white);
     transition: 0.3s;
@@ -483,30 +489,6 @@ footer {
         margin: 20px;
         margin-left: 50px;
         margin-right: 50px;
-    }
-
-    .mapsAndLine iframe {
-        display: none;
-    }
-
-    .lignes {
-        transform: scale(0.7);
-        z-index: 2;
-        flex-direction: column;
-        width: 80%;
-    }
-
-    .mapsAndLine img {
-        transform: none;
-        height: 15rem;
-    }
-
-    .img_line_1 {
-        padding-top: 3rem;
-    }
-
-    .img_line_3 {
-        padding-bottom: 3rem;
     }
 
     .scheduleAndPrices{
