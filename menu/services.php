@@ -5,9 +5,9 @@
         <?php foreach ($batServices as $batItems): ?>
 
         <article>
-            <img class = "img_services" src = "<?php echo $batItems[image]; ?>" alt="<?php echo $batItems[alt]; ?>">
-            <h3><?php echo $batItems[type]; ?></h3>
-            <p><?php echo $batItems[text]; ?></p>
+            <img class = "img_services" src = "<?php echo $batItems['image']; ?>" alt="<?php echo $batItems[alt]; ?>">
+            <h3><?php echo $batItems['type']; ?></h3>
+            <p><?php echo $batItems['text']; ?></p>
         </article>
         <?php  endforeach; ?>
     </div>
