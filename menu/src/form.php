@@ -11,11 +11,11 @@ $requeteReasons = [
 ];
 $prenom = cleanInput($_POST['user_name']);
 $nom = cleanInput($_POST['name']);
-$mail = htmlentities($_POST['user_mail']);
+$mail = htmlentities($_POST['user_email']);
 $message = cleanInput($_POST['user_message']);
 $tel = intval($_POST['user_phone']);
 echo 'La requète de '. $nom . ' ' . $prenom .' est : '.'</br>';
 echo '"'. $message .'"'. '</br>';
 echo 'Son email est : ' . $mail . '</br>';
-echo 'La raison de sa requète est :' . $requeteReasons[$_POST['reasons']];
-echo ' <br> ' . ' Nous allons nous mettre en relation avec vous dans les plus brefs délais au :' . $tel ;
+echo 'La raison de sa requète est : "' .  $requeteReasons[$_POST['reasons']] . '"';
+echo ' <br> ' . ' Nous allons nous mettre en relation avec vous dans les plus brefs délais au :'. '<br>' . $tel ;

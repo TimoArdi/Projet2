@@ -16,14 +16,14 @@
                     <input type="text" id="name" name="name" placeholder="Nom" value="<?php if(isset($_POST['name'])) echo htmlentities($_POST['name']);?>">
                 </div>
                 <div>
-                    <p><?php if(isset($errors['name1'])) echo $errors['name1']; ?></p>
+                    <p><?php echo $errors['name1']; ?></p>
                 </div>
                 <div>
                     <label for="firstname"></label>
                     <input type="text" id="firstname" name="user_name" placeholder="Prénom" value="<?php if(isset($_POST['user_name'])) echo htmlentities($_POST['user_name']);?>" >
                 </div>
                 <div>
-                    <p><?php if(isset($errors['user_name1'])) echo $errors['user_name1']; ?></p>
+                    <p><?php echo $errors['user_name1']; ?></p>
                 </div>
                 <div>
                     <label for="mail"></label>
@@ -31,7 +31,7 @@
                 </div>
                 <div>
                     <div>
-                        <p><?php if(isset($errors['user_email1'])) echo $errors['user_email1']; ?></p>
+                        <p><?php echo $errors['user_email1']; ?></p>
                     </div>
                 </div>
                 <p>
